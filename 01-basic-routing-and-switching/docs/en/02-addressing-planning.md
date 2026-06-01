@@ -16,3 +16,6 @@ The best practice of using a `/30` (`255.255.255.252`) mask for the point-to-poi
 | **R2** | GE 0/0/1 | 192.168.20.1 | 255.255.255.0 | |
 | **PC1** | Ethernet | 192.168.10.10 | 255.255.255.0 | 192.168.10.1 |
 | **PC2** | Ethernet | 192.168.20.10 | 255.255.255.0 | 192.168.20.1 |
+
+---
+[Back to Index](./00-README.en.md)
