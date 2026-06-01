@@ -1,4 +1,4 @@
-\# 02 - Planificación de Direcciones IP
+# 02 - Planificación de Direcciones IP
 
 
 
@@ -6,7 +6,7 @@ Para asegurar una comunicación eficiente y ordenada, se diseñó un esquema de 
 
 
 
-\## Esquema de Direccionamiento
+## Esquema de Direccionamiento
 
 
 
@@ -14,7 +14,7 @@ Se aplicó la mejor práctica de utilizar una máscara `/30` (`255.255.255.252`)
 
 
 
-\### Tabla de Asignación IP
+### Tabla de Asignación IP
 
 
 
@@ -22,15 +22,15 @@ Se aplicó la mejor práctica de utilizar una máscara `/30` (`255.255.255.252`)
 
 | :--- | :--- | :--- | :--- | :--- |
 
-| \*\*R1\*\* | GE 0/0/1 | 192.168.10.1 | 255.255.255.0 |  |
+| **R1** | GE 0/0/1 | 192.168.10.1 | 255.255.255.0 |  |
 
-| \*\*R1\*\* | GE 0/0/0 | 10.0.0.1 | 255.255.255.252 |  |
+| **R1** | GE 0/0/0 | 10.0.0.1 | 255.255.255.252 |  |
 
-| \*\*R2\*\* | GE 0/0/0 | 10.0.0.2 | 255.255.255.252 |  |
+| **R2** | GE 0/0/0 | 10.0.0.2 | 255.255.255.252 |  |
 
-| \*\*R2\*\* | GE 0/0/1 | 192.168.20.1 | 255.255.255.0 |  |
+| **R2** | GE 0/0/1 | 192.168.20.1 | 255.255.255.0 |  |
 
-| \*\*PC1\*\* | Ethernet | 192.168.10.10 | 255.255.255.0 | 192.168.10.1 |
+| **PC1** | Ethernet | 192.168.10.10 | 255.255.255.0 | 192.168.10.1 |
 
-| \*\*PC2\*\* | Ethernet | 192.168.20.10 | 255.255.255.0 | 192.168.20.1 |
+| **PC2** | Ethernet | 192.168.20.10 | 255.255.255.0 | 192.168.20.1 |
 

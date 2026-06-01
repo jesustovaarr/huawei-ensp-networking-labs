@@ -1,4 +1,4 @@
-\# Lab 01: Basic Routing and Switching
+# Lab 01: Basic Routing and Switching
 
 
 
@@ -12,7 +12,7 @@ La documentación para esta práctica se encuentra disponible en los siguientes 
 
 
 
-\* \[English (EN)](./docs/en/00-README.en.md)
+* [English (EN)](./docs/en/00-README.en.md)
 
-\* \[Español (ES)](./docs/es/00-README.es.md)
+* [Español (ES)](./docs/es/00-README.es.md)
 

@@ -6,7 +6,7 @@ Para esta primera práctica de enrutamiento básico y conmutación, se ha diseñ
 
 
 
-\## Topología de Red
+## Topología de Red
 
 
 
@@ -14,11 +14,11 @@ A continuación se muestra el diagrama lógico de la infraestructura configurada
 
 
 
-!\[Topología de Enrutamiento Básico](../../images/01-topology.png)
+![Topología de Enrutamiento Básico](../../images/01-topology.png)
 
 
 
-\## Inventario de Equipos
+## Inventario de Equipos
 
 
 
@@ -38,7 +38,7 @@ Los siguientes dispositivos de la serie empresarial de Huawei fueron utilizados 
 
 
 
-\## Tabla de Conexiones Físicas
+## Tabla de Conexiones Físicas
 
 
 
@@ -46,13 +46,13 @@ Los siguientes dispositivos de la serie empresarial de Huawei fueron utilizados 
 
 | :--- | :--- | :--- | :--- |
 
-| \*\*PC1\*\* | Ethernet | \*\*SW1\*\* | GE 0/0/1 |
+| **PC1** | Ethernet | **SW1** | GE 0/0/1 |
 
-| \*\*SW1\*\* | GE 0/0/24 | \*\*R1\*\* | GE 0/0/1 |
+| **SW1** | GE 0/0/24 | **R1** | GE 0/0/1 |
 
-| \*\*R1\*\* | GE 0/0/0 | \*\*R2\*\* | GE 0/0/0 |
+| **R1** | GE 0/0/0 | **R2** | GE 0/0/0 |
 
-| \*\*R2\*\* | GE 0/0/1 | \*\*SW2\*\* | GE 0/0/24 |
+| **R2** | GE 0/0/1 | **SW2** | GE 0/0/24 |
 
-| \*\*PC2\*\* | Ethernet | \*\*SW2\*\* | GE 0/0/1 |
+| **PC2** | Ethernet | **SW2** | GE 0/0/1 |
 

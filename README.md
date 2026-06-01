@@ -10,7 +10,7 @@ Welcome to my networking portfolio! This repository will contain a progressive c
 The goal of these projects is to demonstrate hands-on skills in network design, configuration, and troubleshooting, scaling from basic routing to advanced network services and security.
 
 ### Lab Index
-* **[Lab 01: Basic Routing and Switching](./01-basic-routing-and-switching)**
+* **[Lab 01: Basic Routing and Switching](./01-basic-routing-and-switching/README.md)**
 
 ### Repository Structure
 Each lab folder follows a standardized structure for easy navigation:
