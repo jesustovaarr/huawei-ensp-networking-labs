@@ -1,7 +1,5 @@
 # Huawei eNSP Networking Labs
 
-*[Read in English](#us-english)* | *[Leer en Español](#es-español)*
-
 ---
 
 ## English
