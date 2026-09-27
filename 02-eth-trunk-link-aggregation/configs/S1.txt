@@ -1,0 +1,47 @@
+#
+system-view
+sysname S1
+#
+undo info-center enable
+#
+interface Eth-Trunk 1
+mode manual load-balance
+#
+interface GigabitEthernet 0/0/1
+eth-trunk 1
+interface GigabitEthernet 0/0/2
+eth-trunk 1
+interface GigabitEthernet 0/0/3
+eth-trunk 1
+#
+interface Eth-Trunk 1
+undo trunkport GigabitEthernet 0/0/1 to 0/0/3
+mode lacp-static
+trunkport GigabitEthernet 0/0/1 to 0/0/3
+#
+lacp priority 100
+#
+interface GigabitEthernet 0/0/3
+lacp priority 40000
+#
+interface Eth-Trunk 1
+max active-linknumber 2
+least active-linknumber 2
+lacp preempt enable
+#
+interface GigabitEthernet 0/0/2
+shutdown
+interface GigabitEthernet 0/0/3
+shutdown
+#
+interface GigabitEthernet 0/0/2
+undo shutdown
+interface GigabitEthernet 0/0/3
+undo shutdown
+#
+interface Eth-Trunk 1
+load-balance dst-ip
+#
+exit
+save
+#

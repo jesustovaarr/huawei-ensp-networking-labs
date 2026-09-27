@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="7E6091AA-1B61-4214-9792-304A61065D84" name="SW2" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-2C-37-E2" com_port="2001" bootmode="0" cx="720.000000" cy="221.000000" edit_left="749" edit_top="205">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="13850DE6-36E1-4e43-A8DC-8B9A764E6D28" name="SW1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-09-34-01" com_port="2000" bootmode="0" cx="321.000000" cy="221.000000" edit_left="342" edit_top="205">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="13850DE6-36E1-4e43-A8DC-8B9A764E6D28" destDeviceID="7E6091AA-1B61-4214-9792-304A61065D84">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="391.183777" srcBoundRect_Y="248.000000" srcOffset_X="-113.000000" srcOffset_Y="-10.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="703.816223" tarBoundRect_Y="248.000000" tarOffset_X="65.000000" tarOffset_Y="-7.000000" />
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="399.183777" srcBoundRect_Y="256.000000" srcOffset_X="-120.000000" srcOffset_Y="-2.000000" tarIndex="2" tarBoundRectIsMoved="1" tarBoundRect_X="711.816223" tarBoundRect_Y="256.000000" tarOffset_X="57.000000" tarOffset_Y="-1.000000" />
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="383.183777" srcBoundRect_Y="240.000000" srcOffset_X="-105.000000" srcOffset_Y="-16.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="695.816223" tarBoundRect_Y="240.000000" tarOffset_X="73.000000" tarOffset_Y="-11.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="421" top="52" right="693" bottom="79" content="Laboratorio: Eth-Trunk" fontname="Consolas" fontstyle="0" editsize="160" txtcolor="-16760768" txtbkcolor="-1" charset="1" />
+    </txttips>
+</topo>
