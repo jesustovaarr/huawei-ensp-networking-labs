@@ -1,0 +1,34 @@
+#
+system-view
+sysname S1
+#
+undo info-center enable
+#
+stp enable
+stp mode stp
+#
+stp root primary
+#
+stp mode rstp
+#
+interface GigabitEthernet 0/0/10
+shutdown
+interface GigabitEthernet 0/0/11
+shutdown
+interface GigabitEthernet 0/0/13
+shutdown
+interface GigabitEthernet 0/0/14
+shutdown
+#
+interface GigabitEthernet 0/0/10
+undo shutdown
+interface GigabitEthernet 0/0/11
+undo shutdown
+interface GigabitEthernet 0/0/13
+undo shutdown
+interface GigabitEthernet 0/0/14
+undo shutdown
+#
+exit
+save
+#

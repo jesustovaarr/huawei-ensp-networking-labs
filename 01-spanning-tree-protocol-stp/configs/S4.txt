@@ -1,0 +1,18 @@
+#
+system-view
+sysname S4
+#
+undo info-center enable
+#
+stp enable
+stp mode stp
+#
+interface GigabitEthernet 0/0/1
+stp cost 100000
+quit
+#
+stp mode rstp
+#
+exit
+save
+#

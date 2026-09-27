@@ -1,0 +1,16 @@
+#
+system-view
+sysname S2
+#
+undo info-center enable
+#
+stp enable
+stp mode stp
+#
+stp root secondary
+#
+stp mode rstp
+#
+exit
+save
+#

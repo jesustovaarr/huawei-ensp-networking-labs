@@ -1,0 +1,18 @@
+#
+system-view
+sysname S3
+#
+undo info-center enable
+#
+stp enable
+stp mode stp
+#
+stp mode rstp
+#
+port-group group-member GigabitEthernet 0/0/20 to GigabitEthernet 0/0/24
+stp edged-port enable
+quit
+#
+exit
+save
+#

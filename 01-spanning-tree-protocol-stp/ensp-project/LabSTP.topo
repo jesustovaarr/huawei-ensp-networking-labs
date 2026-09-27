@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="E85BC1D3-821E-4152-A56D-D4BF930A8BBC" name="S3" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-7A-3D-C7" com_port="2002" bootmode="1" cx="377.000000" cy="349.000000" edit_left="398" edit_top="403">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="C1B44B9B-96BE-40f7-9DE4-D1DAE006DE58" name="S4" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-66-76-E3" com_port="2003" bootmode="1" cx="647.000000" cy="346.000000" edit_left="668" edit_top="398">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="E4198489-A96D-47fc-B7EC-C0F1ED666C08" name="S2" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-5C-4F-2D" com_port="2001" bootmode="1" cx="730.000000" cy="157.000000" edit_left="762" edit_top="142">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="36AF6ED3-040B-47d2-AE13-FFD1225C48F3" name="S1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-A4-2B-D3" com_port="2000" bootmode="1" cx="296.000000" cy="155.000000" edit_left="325" edit_top="141">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="36AF6ED3-040B-47d2-AE13-FFD1225C48F3" destDeviceID="E4198489-A96D-47fc-B7EC-C0F1ED666C08">
+            <interfacePair lineName="Copper" srcIndex="9" srcBoundRectIsMoved="1" srcBoundRect_X="366.183319" srcBoundRect_Y="182.199005" srcOffset_X="14.000000" srcOffset_Y="-33.000000" tarIndex="9" tarBoundRectIsMoved="1" tarBoundRect_X="713.816711" tarBoundRect_Y="183.800995" tarOffset_X="-49.000000" tarOffset_Y="-32.000000" />
+            <interfacePair lineName="Copper" srcIndex="10" srcBoundRectIsMoved="1" srcBoundRect_X="378.183319" srcBoundRect_Y="170.199005" srcOffset_X="2.000000" srcOffset_Y="17.000000" tarIndex="10" tarBoundRectIsMoved="1" tarBoundRect_X="725.816711" tarBoundRect_Y="171.800995" tarOffset_X="-62.000000" tarOffset_Y="18.000000" />
+        </line>
+        <line srcDeviceID="36AF6ED3-040B-47d2-AE13-FFD1225C48F3" destDeviceID="E85BC1D3-821E-4152-A56D-D4BF930A8BBC">
+            <interfacePair lineName="Copper" srcIndex="12" srcBoundRectIsMoved="1" srcBoundRect_X="339.638306" srcBoundRect_Y="221.849777" srcOffset_X="-56.000000" srcOffset_Y="-5.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="387.361694" tarBoundRect_Y="336.150238" tarOffset_X="-53.000000" tarOffset_Y="2.000000" />
+        </line>
+        <line srcDeviceID="E85BC1D3-821E-4152-A56D-D4BF930A8BBC" destDeviceID="E4198489-A96D-47fc-B7EC-C0F1ED666C08">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="441.935455" srcBoundRect_Y="355.366547" srcOffset_X="12.000000" srcOffset_Y="-2.000000" tarIndex="12" tarBoundRectIsMoved="1" tarBoundRect_X="719.064575" tarBoundRect_Y="204.633453" tarOffset_X="-48.000000" tarOffset_Y="29.000000" />
+        </line>
+        <line srcDeviceID="E85BC1D3-821E-4152-A56D-D4BF930A8BBC" destDeviceID="C1B44B9B-96BE-40f7-9DE4-D1DAE006DE58">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="447.181091" srcBoundRect_Y="375.520203" srcOffset_X="-5.000000" srcOffset_Y="7.000000" tarIndex="2" tarBoundRectIsMoved="1" tarBoundRect_X="630.818909" tarBoundRect_Y="373.479797" tarOffset_X="-37.000000" tarOffset_Y="11.000000" />
+        </line>
+        <line srcDeviceID="C1B44B9B-96BE-40f7-9DE4-D1DAE006DE58" destDeviceID="36AF6ED3-040B-47d2-AE13-FFD1225C48F3">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="636.068542" srcBoundRect_Y="352.359222" srcOffset_X="-20.000000" srcOffset_Y="-27.000000" tarIndex="13" tarBoundRectIsMoved="1" tarBoundRect_X="360.931458" tarBoundRect_Y="202.640778" tarOffset_X="-6.000000" tarOffset_Y="25.000000" />
+        </line>
+        <line srcDeviceID="C1B44B9B-96BE-40f7-9DE4-D1DAE006DE58" destDeviceID="E4198489-A96D-47fc-B7EC-C0F1ED666C08">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="691.363708" srcBoundRect_Y="333.460907" srcOffset_X="6.000000" srcOffset_Y="4.000000" tarIndex="13" tarBoundRectIsMoved="1" tarBoundRect_X="739.636292" tarBoundRect_Y="223.539078" tarOffset_X="6.000000" tarOffset_Y="-4.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="310" top="53" right="770" bottom="77" content="LABORATORIO DE SPANNING TREE PROTOCOL (STP)" fontname="Consolas" fontstyle="0" editsize="140" txtcolor="-16776961" txtbkcolor="-1" charset="1" />
+    </txttips>
+</topo>
