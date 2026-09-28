@@ -1,0 +1,15 @@
+#
+system-view
+sysname R3
+#
+undo info-center enable
+#
+interface GigabitEthernet 0/0/0
+ip address 192.168.3.1 24
+quit
+#
+ip route-static 0.0.0.0 0 192.168.3.254
+#
+exit
+save
+#

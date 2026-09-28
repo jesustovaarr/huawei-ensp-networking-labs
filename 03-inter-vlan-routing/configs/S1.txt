@@ -1,0 +1,41 @@
+#
+system-view
+sysname S1
+#
+undo info-center enable
+#
+vlan batch 2 3
+#
+interface GigabitEthernet 0/0/2
+port link-type access
+port default vlan 2
+quit
+#
+interface GigabitEthernet 0/0/3
+port link-type access
+port default vlan 3
+quit
+#
+# Método 1: Router-on-a-Stick (Enlace Troncal hacia R1)
+interface GigabitEthernet 0/0/1
+port link-type trunk
+port trunk allow-pass vlan 2 3
+quit
+#
+# Método 2: Switch Capa 3 (Eliminación de Trunk y creación de VLANIF)
+interface GigabitEthernet 0/0/1
+undo port trunk allow-pass vlan 2 3
+undo port link-type
+quit
+#
+interface Vlanif 2
+ip address 192.168.2.254 24
+quit
+#
+interface Vlanif 3
+ip address 192.168.3.254 24
+quit
+#
+exit
+save
+#

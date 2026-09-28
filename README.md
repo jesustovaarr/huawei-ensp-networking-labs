@@ -19,7 +19,7 @@ El repositorio está estructurado en **6 módulos** que comprenden un total de *
 | :-: | :--- | :--- | :--- |
 | **01** | **Módulo 1: Conmutación L2** | [01-spanning-tree-protocol-stp](./01-spanning-tree-protocol-stp) | STP, RSTP, Root Bridge, Port Cost, Edge Ports |
 | **02** | **Módulo 1: Conmutación L2** | [02-eth-trunk-link-aggregation](./02-eth-trunk-link-aggregation) | Link Aggregation, Manual Load-Balance, LACP Estático |
-| **03** | **Módulo 1: Conmutación L2** | `03-inter-vlan-routing` | VLANs, Subinterfaces 802.1Q, Switching L3 (VLANIF) |
+| **03** | **Módulo 1: Conmutación L2** | [03-inter-vlan-routing](./03-inter-vlan-routing) | VLANs, Subinterfaces 802.1Q, Switching L3 (VLANIF) |
 | **04** | **Módulo 2: Enrutamiento L3** | `04-ip-routing-basics` | Static Routing, Floating Backup Routes, Default Routes |
 | **05** | **Módulo 2: Enrutamiento L3** | `05-ospf-multi-area` | OSPFv2 Multi-Área, ABR, DR/BDR, LSAs, Autenticación MD5 |
 | **06** | **Módulo 3: Servicios IP** | `06-network-services-dhcp-ftp-ntp` | Servidor FTP en VRP, DHCP Relay, Reserva MAC, NTP Master |

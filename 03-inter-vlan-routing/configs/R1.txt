@@ -1,0 +1,24 @@
+#
+system-view
+sysname R1
+#
+undo info-center enable
+#
+interface GigabitEthernet 0/0/1.2
+dot1q termination vid 2
+arp broadcast enable
+ip address 192.168.2.254 24
+quit
+#
+interface GigabitEthernet 0/0/1.3
+dot1q termination vid 3
+arp broadcast enable
+ip address 192.168.3.254 24
+quit
+#
+undo interface GigabitEthernet 0/0/1.2
+undo interface GigabitEthernet 0/0/1.3
+#
+exit
+save
+#
