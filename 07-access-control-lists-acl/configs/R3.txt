@@ -17,9 +17,68 @@ network 10.1.3.2 0.0.0.0
 quit
 #
 telnet server enable
+#
 user-interface vty 0 4
 authentication-mode password
 user privilege level 3
+quit
+#
+# ACL básica numerada 2000
+acl 2000
+rule 5 permit source 192.168.10.0 0.0.0.255
+rule 10 deny source any
+quit
+# Aplicar ACL
+user-interface vty 0 4
+acl 2000 inbound
+quit
+#
+# ACL básica nombrada,
+acl name VENTAS-TELNET 2000
+rule 5 permit source 192.168.10.0 0.0.0.255
+rule 10 deny source any
+quit
+# Reaplicar la ACL
+user-interface vty 0 4
+undo acl inbound
+acl 2000 inbound
+quit
+#
+# ACL avanzada numerada 3000
+acl 3000
+rule 5 permit tcp source 10.1.4.1 0.0.0.0 destination 10.1.2.2 0.0.0.0 destination-port eq 23
+rule 10 deny ip source 192.168.20.0 0.0.0.255 destination 10.1.2.2 0.0.0.0
+quit
+user-interface vty 0 4
+undo acl inbound
+acl 3000 inbound
+quit
+#
+# ACL avanzada nombrada
+acl name CONTROL-SERVER 3001
+rule 5 permit tcp source 10.1.4.1 0.0.0.0 destination 10.1.2.2 0.0.0.0 destination-port eq telnet
+rule 10 deny ip source 192.168.20.0 0.0.0.255 destination 10.1.2.2 0.0.0.0
+quit
+user-interface vty 0 4
+undo acl inbound
+acl 3001 inbound
+quit
+#
+# Prueba de ACL vacía
+acl 2020
+quit
+user-interface vty 0 4
+undo acl inbound
+acl 2020 inbound
+quit
+#
+# Prueba de ACL con una regla
+acl 2021
+rule 5 permit source 192.168.10.0 0.0.0.255
+quit
+user-interface vty 0 4
+undo acl inbound
+acl 2021 inbound
 quit
 #
 exit
