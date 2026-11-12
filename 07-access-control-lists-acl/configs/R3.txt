@@ -1,0 +1,27 @@
+#
+system-view
+sysname R3
+#
+interface GigabitEthernet 0/0/1
+ip address 10.1.2.2 30
+quit
+#
+interface GigabitEthernet 0/0/2
+ip address 10.1.3.2 30
+quit
+#
+ospf 1
+area 0
+network 10.1.2.2 0.0.0.0
+network 10.1.3.2 0.0.0.0
+quit
+#
+telnet server enable
+user-interface vty 0 4
+authentication-mode password
+user privilege level 3
+quit
+#
+exit
+save
+#
