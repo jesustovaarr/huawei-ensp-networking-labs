@@ -1,0 +1,23 @@
+#
+system-view
+sysname R3
+#
+interface GigabitEthernet 0/0/2
+ip address 1.2.3.254 24
+quit
+#
+user-interface vty 0 4
+authentication-mode aaa
+quit
+#
+aaa
+local-user profe password cipher huawei
+local-user profe service-type telnet
+local-user profe privilege level 15
+quit
+#
+telnet server enable
+#
+exit
+save
+#

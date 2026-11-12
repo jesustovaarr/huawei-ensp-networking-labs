@@ -25,7 +25,7 @@ El repositorio está estructurado en **6 módulos** que comprenden un total de *
 | **06** | **Módulo 3: Servicios IP** | `06-network-services-dhcp-ftp-ntp` | Servidor FTP en VRP, DHCP Relay, Reserva MAC, NTP Master |
 | **07** | **Módulo 4: Seguridad & NAT** | [07-access-control-lists-acl](./07-access-control-lists-acl) | Basic & Advanced ACLs, Named ACLs|
 | **08** | **Módulo 4: Seguridad & NAT** | `08-network-security-aaa-ssh` | Seguridad AAA, Niveles de Privilegio, SSH/STelnet RSA, RADIUS |
-| **09** | **Módulo 4: Seguridad & NAT** | `09-network-address-translation-nat` | Static NAT, Dynamic NAT, NAPT, Easy IP, NAT Server |
+| **09** | **Módulo 4: Seguridad & NAT** | [09-network-address-translation-nat](./09-network-address-translation-nat) | Static NAT, Dynamic NAT, NAPT, Easy IP, NAT Server |
 | **10** | **Módulo 5: WAN & Monitoreo** | `10-wan-technologies-ppp-pppoe` | Serial PPP, PAP & CHAP, PPPoE Server/Client, Dialer |
 | **11** | **Módulo 5: WAN & Monitoreo** | `11-snmpv3-network-management` | SNMPv3, USM (SHA/AES), MIB Views Restringidas, Traps |
 | **12** | **Módulo 6: IPv6 & WLAN** | `12-ipv6-infrastructure` | IPv6 GUA, EUI-64, SLAAC, DHCPv6 Stateful, OSPFv3, Anycast |

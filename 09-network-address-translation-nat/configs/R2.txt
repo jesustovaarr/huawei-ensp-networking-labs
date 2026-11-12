@@ -1,0 +1,58 @@
+#
+system-view
+sysname R2
+#
+interface GigabitEthernet 0/0/1
+ip address 192.168.1.254 24
+quit
+#
+interface GigabitEthernet 0/0/2
+ip address 1.2.3.4 24
+quit
+#
+ip route-static 0.0.0.0 0 1.2.3.254
+#
+# NAT estático
+interface GigabitEthernet 0/0/2
+nat static global 1.2.3.10 inside 192.168.1.1
+quit
+interface GigabitEthernet 0/0/2
+undo nat static global 1.2.3.10 inside 192.168.1.1
+quit
+#
+# NAT dinámico sin PAT
+nat address-group 1 1.2.3.10 1.2.3.20
+acl 2000
+rule 5 permit source any
+quit
+interface GigabitEthernet 0/0/2
+nat outbound 2000 address-group 1 no-pat
+quit
+interface GigabitEthernet 0/0/2
+undo nat outbound 2000 address-group 1 no-pat
+quit
+#
+# NAPT
+interface GigabitEthernet 0/0/2
+nat outbound 2000 address-group 1
+quit
+interface GigabitEthernet 0/0/2
+undo nat outbound 2000 address-group 1
+quit
+#
+# Easy IP
+interface GigabitEthernet 0/0/2
+nat outbound 2000
+quit
+interface GigabitEthernet 0/0/2
+undo nat outbound 2000
+quit
+#
+# NAT Server
+interface GigabitEthernet 0/0/2
+nat server protocol tcp global current-interface 2323 inside 192.168.1.1 telnet
+quit
+#
+exit
+save
+#

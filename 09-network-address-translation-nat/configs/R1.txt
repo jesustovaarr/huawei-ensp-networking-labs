@@ -1,0 +1,25 @@
+#
+system-view
+sysname R1
+#
+interface GigabitEthernet 0/0/1
+ip address 192.168.1.1 24
+quit
+#
+ip route-static 0.0.0.0 0 192.168.1.254
+#
+user-interface vty 0 4
+authentication-mode aaa
+quit
+#
+aaa
+local-user profe password cipher huawei
+local-user profe service-type telnet
+local-user profe privilege level 15
+quit
+#
+telnet server enable
+#
+exit
+save
+#
