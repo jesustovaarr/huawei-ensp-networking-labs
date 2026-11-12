@@ -1,0 +1,28 @@
+#
+system-view
+sysname R2
+#
+undo info-center enable
+#
+interface GigabitEthernet0/0/1
+ip address 10.0.12.2 255.255.255.0
+quit
+#
+interface GigabitEthernet0/0/2
+ip address 10.0.23.2 255.255.255.0
+quit
+#
+interface LoopBack0
+ip address 10.0.1.2 255.255.255.255
+quit
+#
+# Rutas Estáticas hacia R1 y R3
+ip route-static 10.0.1.1 32 10.0.12.1
+ip route-static 10.0.1.3 32 10.0.23.3
+#
+# Ruta Flotante hacia LoopBack0 de R1 via R3
+ip route-static 10.0.1.1 32 10.0.23.3 preference 100
+#
+exit
+save
+#

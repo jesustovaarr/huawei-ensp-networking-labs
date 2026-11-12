@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="F1A1B2C3-D4E5-4678-9ABC-000000000001" name="R1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-11-22-01" com_port="2000" bootmode="1" cx="300.000000" cy="350.000000" edit_left="283" edit_top="366">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="F1A1B2C3-D4E5-4678-9ABC-000000000002" name="R2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-11-22-02" com_port="2001" bootmode="1" cx="550.000000" cy="150.000000" edit_left="570" edit_top="129">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="F1A1B2C3-D4E5-4678-9ABC-000000000003" name="R3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-11-22-03" com_port="2002" bootmode="1" cx="800.000000" cy="350.000000" edit_left="877" edit_top="371">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="F1A1B2C3-D4E5-4678-9ABC-000000000001" destDeviceID="F1A1B2C3-D4E5-4678-9ABC-000000000002">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="360.720856" srcBoundRect_Y="350.023315" srcOffset_X="-50.000000" srcOffset_Y="-26.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="543.279114" tarBoundRect_Y="203.976685" tarOffset_X="-54.000000" tarOffset_Y="-12.000000" />
+        </line>
+        <line srcDeviceID="F1A1B2C3-D4E5-4678-9ABC-000000000002" destDeviceID="F1A1B2C3-D4E5-4678-9ABC-000000000003">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="610.720886" srcBoundRect_Y="203.976685" srcOffset_X="25.000000" srcOffset_Y="-12.000000" tarIndex="2" tarBoundRectIsMoved="1" tarBoundRect_X="793.279114" tarBoundRect_Y="350.023315" tarOffset_X="-16.000000" tarOffset_Y="-37.000000" />
+        </line>
+        <line srcDeviceID="F1A1B2C3-D4E5-4678-9ABC-000000000001" destDeviceID="F1A1B2C3-D4E5-4678-9ABC-000000000003">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="370.183777" srcBoundRect_Y="377.000000" srcOffset_X="-9.000000" srcOffset_Y="15.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="783.816223" tarBoundRect_Y="377.000000" tarOffset_X="-30.000000" tarOffset_Y="17.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="380" top="50" right="726" bottom="75" content="Laboratorio: IP Routing Basics" fontname="Consolas" fontstyle="0" editsize="150" txtcolor="-16760768" txtbkcolor="-1" charset="1" />
+    </txttips>
+</topo>
